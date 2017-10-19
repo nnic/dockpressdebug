@@ -12,6 +12,7 @@ services:
     environment:
       WORDPRESS_DB_HOST: wordpress
       WORDPRESS_DB_PASSWORD: password12@
+      XDEBUG_CONFIG: remote_host={your ip}       # Insert the IP of your host machine
     ports:
       - 80:80 # Expose http and https
       - 443:443
