@@ -8,9 +8,9 @@ services:
     image: threenine/dockpressdebug
     restart: always
     volumes:
-      - ./wp-content:/var/www/html/wp-content
+      - ./html:/var/www/html
     environment:
-      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_HOST: wordpress
       WORDPRESS_DB_PASSWORD: password12@
     ports:
       - 80:80 # Expose http and https

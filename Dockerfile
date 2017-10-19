@@ -5,7 +5,7 @@
 
  # Always use the latest version og WordPress
 FROM wordpress:latest
-MAINTAINER support@threenine.co.uk
+
 # install and configure XDebug
 
 RUN yes | pecl install xdebug \

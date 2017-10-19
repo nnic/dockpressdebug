@@ -1,5 +1,6 @@
 *.log
 wp-config.php
+wp-content
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/
@@ -10,6 +11,7 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 
+db_data
 /.htaccess
 /license.txt
 /readme.html
