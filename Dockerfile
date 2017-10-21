@@ -5,7 +5,9 @@
 
  # Always use the latest version og WordPress
 FROM wordpress:latest
-
+LABEL "uk.co.threenine"="three nine  consulting"
+LABEL version="1.0"
+LABEL description="Wordpress development environment with xdebug"
 # install and configure XDebug
 
 RUN yes | pecl install xdebug \
