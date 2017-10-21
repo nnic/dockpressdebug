@@ -8,7 +8,6 @@ FROM wordpress:latest
 LABEL "uk.co.threenine"="three nine  consulting"
 LABEL version="1.0"
 LABEL description="Wordpress development environment with xdebug"
-# install and configure XDebug
 
 ENV XDEBUG_PORT 9000
 
@@ -20,7 +19,7 @@ RUN curl -o /bin/wp-cli.phar https://raw.githubusercontent.com/wp-cli/builds/gh-
 COPY wp-su.sh /bin/wp
 RUN chmod +x /bin/wp-cli.phar /bin/wp
 
-# Use https://phar.phpunit.de/phpunit-6.0.phar for PHP 7
+# Use phpUNit for unit test 
 RUN curl -Lo /tmp/phpunit.phar https://phar.phpunit.de/phpunit-5.7.phar \
     && chmod +x /tmp/phpunit.phar \
     && sudo mv /tmp/phpunit.phar /bin/phpunit
