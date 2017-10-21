@@ -6,7 +6,7 @@ Removes  opcache configuration file that the WordPress image installs because it
 
 This is primarily targeted for local development environments and should not be used for PRODUCTION environments
 
-For full details  on how to use this check [Docker and Wordpress debug environment](https://threenine.co.uk)
+For full details  on how to use this check [Docker and Wordpress debug environment](https://threenine.co.uk/docker-wordpress-debug-environment/)
 
 
 

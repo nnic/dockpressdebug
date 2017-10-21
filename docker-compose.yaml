@@ -10,7 +10,7 @@ services:
     volumes:
       - ./html:/var/www/html
     environment:
-      WORDPRESS_DB_HOST: wordpress
+      WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: password12@
       XDEBUG_CONFIG: remote_host={your ip}       # Insert the IP of your host machine
     ports:
